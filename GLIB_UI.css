@@ -1,0 +1,92 @@
+/* 
+	GLIB_UI
+	-------
+	Description : Simple CSS framework
+	Author: Gilles ALBERT
+	Version : 1.3
+	Last modification : 13/08/2019	
+*/
+html{width:100%;height:100%;box-sizing:border-box}
+body{box-sizing:border-box;margin:0;outline:0 none;background-color:gainsboro;width:100%;height:100%;font-family:Verdana}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{font-weight:600;margin:0 5px;font-family:inherit}		
+p{margin:5px 5px;font-weight:600}		
+label{box-sizing:border-box;width:100%;margin-top:5px;margin-bottom:2.5px 5px;padding:0 0.5%;display:block;font-weight:600}		
+form{box-sizing:border-box;margin:10px 10px}		
+textarea{box-sizing:border-box;margin:5px auto;display:block;padding:8px;width:100%;min-height:200px;resize:none;font-weight:600}
+/*select{margin:5px 5px;padding:4px;width:150px}*/
+input[type=button],button{border:none;display:inline-block;padding:5px 6px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;border-radius:5px;margin:4px 4px;min-width:90px;color:white;background-color:#404040;font-weight:600;font-size:0.8em;font-family:inherit}
+input[type=button]:hover,button:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.38)}
+input[type=date]{padding:8px;border:none;border-bottom:1px solid #ccc;margin:5px 5px;width:135px}
+input[type=text]{padding:8px;display:inline-block;border:none;border-bottom:1px solid #ccc;margin:5px 5px;font-weight:600;width:200px}
+input[type=checkbox],input[type=radio]{margin:5px 5px;display:inline-block}
+select{padding:8px;border:none;border-bottom:1px solid #ccc;margin:5px 5px;width:150px}
+hr{width:99%}
+br{margin:0 10px}
+table{width:100%;margin:15px 0}
+table,tr,th,td{border:1px solid grey;border-collapse:collapse}
+th{color:white;background-color:#264040;text-align:center;padding:2.5px 5px;font-weight:600;font-size:0.85em}
+td{text-align:center;padding:1px 8px;font-weight:600;font-size:0.85em}
+tr{color:black;background-color:white}
+tr:hover{background-color:#D9D9D9}
+ul{list-style-type:none;padding:0}
+li{padding:2px 8px;border-bottom:1px solid #ddd;font-weight:600;display:inline-block}
+a,a:active,a:hover{outline-width:0;text-decoration:none;color:#001ff5;margin:5px 5px}
+
+/* Navigation bar*/	
+.g-nav-h{box-sizing:border-box;overflow:auto;width:100%;overflow:hidden;font-weight:600;position:fixed;top:0}
+.g-nav-h-item{box-sizing:border-box;overflow:auto;padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.g-nav-h-item:hover{box-sizing:border-box;background-color:#999999;color:#404040}
+
+/* Containers */
+.g-div-main{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:100%;}
+.g-div-100{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:100%}
+.g-div-90{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:90%}
+.g-div-80{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:80%}
+.g-div-75{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:75%}
+.g-div-70{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:70%;}
+.g-div-66{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:66.66666%}
+.g-div-60{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:60%}
+.g-div-50{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:50%}
+.g-div-40{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:40%}
+.g-div-33{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:33.33333%}
+.g-div-30{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:30%}
+.g-div-25{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:25%}
+.g-div-20{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:20%}
+.g-div-15{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:15%}
+.g-div-10{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:10%}
+.g-div-5{box-sizing:border-box;overflow:auto;padding:0 5px;float:left;width:5%}
+
+/* Button colors */
+.g-default,.g-default:hover{color:#fff!important;background-color:#404040!important}
+.g-dark-blue,.g-hover-dark-blue:hover{color:#fff!important;background-color:darkSlateBlue!important}
+.g-blue,.g-hover-blue:hover{color:#fff!important;background-color:slateBlue!important}
+.g-green,.g-hover-green:hover{color:#fff!important;background-color:seaGreen!important}
+.g-red,.g-hover-red:hover{color:#fff!important;background-color:fireBrick!important}
+.g-teal,.g-hover-teal:hover{color:#fff!important;background-color:teal!important}
+.g-orange,.g-hover-orange:hover{color:#fff!important;background-color:darkOrange!important}
+.g-black,.g-hover-black:hover{color:#fff!important;background-color:black!important}
+.g-grey,.g-hover-grey:hover{color:#fff!important;background-color:slateGrey!important}
+.g-yellow,.g-hover-yellow:hover{color:#fff!important;background-color:goldenRod!important}
+.g-brown,.g-hover-brown:hover{color:#fff!important;background-color:saddleBrown!important}
+.g-purple,.g-hover-purple:hover{color:#fff!important;background-color:purple!important}
+.g-navy,.g-hover-navy:hover{color:#fff!important;background-color:midnightBlue!important}
+.g-bleu,.g-hover-bleu:hover{color:#fff!important;background-color:blue!important}
+
+/* Text color */
+.g-default-clr{color:#404040!important}	
+.g-dark-blue-clr{color:darkSlateBlue!important}
+.g-blue-clr{color:slateBlue!important}
+.g-green-clr{color:seagreen!important}
+.g-red-clr{color:fireBrick!important}
+.g-teal-clr{color:teal!important}
+.g-orange-clr{color:darkOrange!important}
+.g-black-clr{color:black!important}
+.g-grey-clr{color:slateGrey!important}
+.g-yellow-clr{color:goldenRod!important}
+.g-brown-clr{color:saddleBrown!important}
+.g-purple-clr{color:purple!important}
+
+
+
+

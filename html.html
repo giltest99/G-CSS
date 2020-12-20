@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GLIB_CSS</title>  	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="GLIB_UI.css">
+  	<link rel="icon" type="image/png" href="G-blue-icon.png">
+</head>
+
+<body contextmenu="mymenu">
+
+	<div class="g-nav-h g-default">
+		<div class="g-nav-h-item" onclick="alert('Welcome home !')">&nbsp;&#9776;&nbsp;</div>
+		<div class="g-nav-h-item g-hover-dark-blue">London</div>
+		<div class="g-nav-h-item">Paris</div>
+		<div class="g-nav-h-item">Montreal</div>
+		<div class="g-nav-h-item g-hover-orange" style="float:right;">&nbsp;?&nbsp;</div>		
+	</div>
+
+	<div id="gauche" class="g-div-50" style="margin-top:40px;">
+	
+		<h2 class="g-default-clr">ELEMENTS</h2>
+		
+		<hr>
+		
+		<p>
+			<label>Textarea</label>
+			<textarea id="ta1"></textarea>
+			<input type="button" value="click 1" class="g-navy">
+			<input type="button" value="click 2" class="g-green">
+			<input type="button" value="click 3" class="g-red">
+			<input type="button" value="click 3" class="g-brown">
+			<input type="button" value="click 3" class="g-purple">
+			<input type="button" value="click 3" class="g-grey">
+			<input type="button" value="click 3" class="g-yellow">
+		</p>
+		
+		<p>
+			<form>
+				<label>Datalist input</label>
+				<input list="browsers" name="browser" placeholder="Navigateurs" style="width:30%;">
+				<datalist id="browsers">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Chrome">
+					<option value="Opera">
+					<option value="Safari">
+				</datalist>
+				<input type="button" value="click 3" class="g-red">
+			</form>
+		</p>
+		
+		<p>
+		
+			<table>
+				<tr class="g-default">
+					<th>NOM</th>
+					<th>PRENOM</th>
+					<th>SERVICE</th>
+					<th>POSTE</th>
+					<th>CONTRAT</th>
+				</tr>
+				<tr>
+					<td>DUPONT</td>
+					<td>Jean</td>
+					<td>Logistique</td>
+					<td>CE</td>
+					<td>CDI</td>
+				</tr>
+				<tr>
+					<td>DURAND</td>
+					<td>Didier</td>
+					<td>Developpement</td>
+					<td>Dev</td>
+					<td>CDI</td>
+				</tr>
+				<tr>
+					<td>DOE</td>
+					<td>John</td>
+					<td>Admin</td>
+					<td>Dev</td>
+					<td>INT</td>
+				</tr>
+			</table>
+		
+		</p>
+		<br>
+		<p>
+			<label>Lists : br pour liste verticale</label>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li><br>
+				<li>Item 4</li><br>
+				<li>Item 5</li>
+			</ul>		
+		</p>
+		
+		<menu type="context" id="mymenu">
+			<menuitem label="Recharger la page" icon="G-blue-icon.png" onclick="window.location.reload();"></menuitem>
+			<menu label="Sous-menus">
+				<menuitem label="Menu 1" icon="G-blue-icon.png" onclick="alert('Sous-menu 1 cliqué !')"></menuitem>
+				<menuitem label="Menu 2" icon="G-blue-icon.png" onclick="alert('Sous-menu 2 cliqué !')"></menuitem>
+			</menu>
+			<menuitem label="Menu 3" icon="G-blue-icon.png" onclick="alert('Menu 3 cliqué !')"></menuitem>			
+		</menu>
+		
+	</div>
+	
+	<div id="milieu" class="g-div-50" style="margin-top:40px;">
+	
+		<h2 class="g-dark-blue-clr">FORMULAIRES</h2>
+		
+		<p>Cette section comporte plusieurs formulaires dont la mise en page est très soignée !</p>
+		
+		<hr>
+		
+		<p>
+			<label>Formulaire 1</label>
+			<input type="text" class="g-input" placeholder="MAJUSCULES" style="width:30%;">
+			<input type="button" value="Select" class="g-blue">
+			<input type="button" value="Insert" class="g-green">
+			<input type="button" value="Update" class="g-teal">
+			<input type="button" value="Delete" class="g-orange">
+			<input type="button" value="Alter">
+			<input type="button" value="Drop" class="g-black">			
+		</p>
+		
+		<p>			
+			<form>
+				<label>Checkboxes</label>
+				<input type="checkbox" name="vehicle1" value="val1">Valeur 1<br>
+				<input type="checkbox" name="vehicle2" value="val2">Valeur 2<br>
+				<input type="checkbox" name="vehicle1" value="val1">Valeur 3
+				<input type="checkbox" name="vehicle1" value="val1">Valeur 4
+				<input type="checkbox" name="vehicle1" value="val1">Valeur 5
+				<input type="checkbox" name="vehicle1" value="val1">Valeur 6<br><br>
+				<input type="button" value="click checkbox" class="g-black">
+			</form> 
+		</p>
+		
+		<p>		
+			<form>
+				<label>Radio buttons</label>
+				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other<br><br>
+				<input type="button" value="click radio" class="g-black">
+			</form> 	
+		</p>
+		
+		<p>
+			<form>
+				<label>Input date</label>
+				<input type="date" name="date1">
+				<input type="button" value="Début" class="g-blue">
+				<input type="date" name="date2">
+				<input type="button" value="Fin" class="g-teal">
+			</form> 		
+		</p>
+		
+		<br><br>
+		
+		<p>
+			<label>LANGAGES</label>
+			<select name="statlots">
+				<option value="all">TOUS</option>
+				<option value="atraiter">HTML</option>
+				<option value="encourspick">CSS</option>
+				<option value="aventiler">JAVASCRIPT/option>
+				<option value="encoursventile">PHP</option>
+				<option value="prepare">SQL</option>
+				<option value="encoursemb">NODEJS</option>
+				<option value="emballe">PYTHON</option>
+				<option value="encoursexpe">BASH</option>
+			</select>
+			
+			<label>SELECTION DATES</label>
+			<input type="date" name="date1" value="2019-08-13">
+			<input type="button" value="Début" class="g-blue">
+			<br>
+			<input type="date" name="date2">
+			<input type="button" value="Fin" class="g-teal">
+			
+			<br><br>
+			<input type="button" value="click" class="g-blue">
+		</p>
+		
+		<br>
+		
+		<p>
+		
+			<a href="#">Je suis un lien</a>
+		
+		</p>
+		
+		<br>
+		
+		<input type="button" value="click">
+		
+		<br><br>
+		
+	</div>
+	
+
+</body>
+</html>
